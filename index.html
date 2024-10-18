@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <title>Tushar Sharma</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .active {
+        text-decoration: underline;
+        text-decoration-color: #2563eb;
+        text-underline-offset: 8px;
+        color: #93c5fd;
+      }
+
+      @media (min-width: 1128px) {
+        .nitin {
+          overflow: hidden;
+          height: 52px;
+          border-right: 2px solid #93c5fd;
+          animation: animate 6s linear infinite;
+        }
+      }
+
+      @keyframes animate {
+        0%,
+        10%,
+        100% {
+          width: 0%;
+        }
+        70%,
+        90% {
+          width: 27%;
+          max-width: fit-content;
+        }
+      }
+
+      .Nit {
+        -webkit-text-stroke: 1px #898b8e;
+      }
+    </style>
+  </head>
+
+  <body class="bg-blue-950 text-white w-11/12 sm:w-4/5 mx-auto">
+    <nav
+      class="fixed top-0 bg-blue-950 w-11/12 sm:w-4/5 h-16 flex justify-between items-center z-50"
+    >
+      <div class="flex items-center">
+        <img class="w-10 h-10 rounded-full mr-2" src="img.jpg" alt="" />
+        <div class="leading-tight">
+          <p class="text-xl leading-tight text-blue-500 font-medium">Tushar</p>
+          <p class="text-xs leading-tight">portfolio</p>
+        </div>
+      </div>
+      <i class="fa-solid fa-bars sm:hidden cursor-pointer menuBar"></i>
+      <div class="flex items-center max-sm:hidden">
+        <a
+          class="pl-7 hover:underline hover:text-blue-300 hover:decoration-blue-600 hover:underline-offset-8 active"
+          href="#Home"
+          >Home</a
+        >
+        <a
+          class="pl-7 hover:underline hover:text-blue-300 hover:decoration-blue-600 hover:underline-offset-8"
+          href="#About"
+          >About</a
+        >
+        <a
+          href="#Skills"
+          class="pl-7 hover:underline hover:text-blue-300 hover:decoration-blue-600 hover:underline-offset-8"
+          >Skills</a
+        >
+        <a
+          class="pl-7 hover:underline hover:text-blue-300 hover:decoration-blue-600 hover:underline-offset-8"
+          href="#Project"
+          >Projects</a
+        >
+        <a
+          class="pl-7 hover:underline hover:text-blue-300 hover:decoration-blue-600 hover:underline-offset-8"
+          href="#Contact"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <div class="flex justify-end relative top-16 mobNav sm:hidden">
+      <div class="flex flex-col bg-slate-400 w-28 h-36 pt-3">
+        <a
+          class="pl-7 pb-1 hover:underline hover:text-blue-600 hover:decoration-blue-600 hover:underline-offset-8"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="pl-7 pb-1 hover:underline hover:text-blue-600 hover:decoration-blue-600 hover:underline-offset-8"
+          href="#"
+          >About</a
+        >
+        <a
+          class="pl-7 pb-1 hover:underline hover:text-blue-600 hover:decoration-blue-600 hover:underline-offset-8"
+          href="#"
+          >Projects</a
+        >
+        <a
+          class="pl-7 hover:underline hover:text-blue-600 hover:decoration-blue-600 hover:underline-offset-8"
+          href="#"
+          >Contact</a
+        >
+      </div>
+    </div>
+
+    <section
+      class="sm:flex sm:h-screen lg:max-h-[700px] justify-between items-center pt-14"
+      id="Home"
+    >
+      <div class="max-w-xs mx-auto sm:hidden pt-8">
+        <img
+          id="image"
+          class="rounded-full mx-auto"
+          src="img.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="mb-5 md sm:mt-10 text-center sm:text-left">
+        <h4 class="font-medium text-3xl mb-3 mx-auto">Hi, Welcome</h4>
+        <div class="max-lg:hidden">
+          <span class="font-medium text-5xl mb-3">I'm </span>
+          <span
+            class="font-medium text-5xl mb-3 absolute max-lg:pl-4 text-blue-500 nitin"
+            >Tushar<span class="invisible">_</span>Sharma</span
+          >
+          <span class="font-medium text-5xl Nit max-lg:hidden text-blue-950">
+            Tushar<span class="invisible">_</span>Sharma</span
+          >
+        </div>
+        <p class="font-medium text-5xl lg:hidden">
+          I'm <span class="text-blue-500">Tushar Sharma</span>
+        </p>
+        <h2 class="font-medium text-5xl mb-3">A Frontend Developer</h2>
+        <p class="text-md mb-3">
+          I'm currently pursuing a Master of Computer Applications (MCA),
+          focusing on building a strong foundation in software development and
+          web technologies. I have a keen interest in coding and
+          problem-solving, and I'm excited to apply my skills in real-world
+          projects that make a difference.
+        </p>
+        <div class="flex space-x-4 mb-6 mt-8 justify-center sm:justify-start">
+          <a
+            href="#"
+            class="hover:bg-blue-500 border-2 border-blue-500 rounded-full"
+          >
+            <i class="fa-brands fa-facebook p-2"></i
+          ></a>
+          <a
+            href="#"
+            class="hover:bg-blue-500 border-2 border-blue-500 rounded-full"
+          >
+            <i class="fa-brands fa-instagram p-2"></i
+          ></a>
+          <a
+            href="#"
+            class="hover:bg-blue-500 border-2 border-blue-500 rounded-full"
+          >
+            <i class="fa-brands fa-x-twitter p-2"></i
+          ></a>
+          <a
+            href="http://www.linkedin.com/in/tushar-sharma-9b9919257"
+            class="hover:bg-blue-500 border-2 border-blue-500 rounded-full"
+          >
+            <i class="fa-brands fa-linkedin-in p-2"></i
+          ></a>
+        </div>
+        <button
+          class="border-2 border-blue-500 text-xl bg-blue-500 text-blue-950 font-medium rounded-full py-1 px-3"
+        >
+        <a href="https://drive.google.com/file/d/1bqYmclQhIOyxOj9oueHHD1VZXKkk7q1w/view?usp=drivesdk">Download CV</a>
+          
+        </button>
+      </div>
+      <div class="max-w-72 ml-4 mb-5 max-sm:hidden">
+        <img class="rounded-full" src="img.jpg" alt="image" />
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col sm:flex-row justify-between items-center sm:pt-20"
+      id="About"
+    >
+      <div class="w-full sm:w-1/2 mb-8 sm:mb-0">
+        <img
+          class="h-80 w-60 rounded-lg border-2 border-blue-500 mx-auto"
+          src="img.jpg"
+          alt=""
+        />
+      </div>
+      <div class="w-full sm:w-1/2 text-center sm:text-left space-y-4">
+        <p class="text-4xl font-medium">
+          ABOUT <span class="text-blue-500">Me</span>
+        </p>
+        <h3 class="text-3xl">Frontend Developer</h3>
+        <p class="text-lg">
+          I'm currently pursuing a Master of Computer Applications (MCA), where
+          I am gaining knowledge in programming, database management, and web
+          development. I am passionate about building projects that enhance my
+          skills in technologies like HTML, CSS, JavaScript, and more
+        </p>
+        <button
+          class="border-2 border-blue-500 bg-blue-500 text-blue-950 font-medium rounded-full py-2 px-6 mt-4"
+        >
+          Read more
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col sm:pt-20 items-center justify-center"
+      id="Skills"
+    >
+      <div class="text-center mb-10">
+        <p class="text-4xl font-medium mb-3">
+          My <span class="text-blue-500">Skills</span>
+        </p>
+        <p class="text-lg">Technologies I work with</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <!-- <div
+          class="p-6 border-2 border-blue-500 rounded-lg flex flex-col justify-center items-center hover:shadow-lg transition-transform transform hover:-translate-y-1"
+        >
+          <img
+            class="w-20"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+          />
+          <h3 class="text-xl font-semibold">C++</h3>
+          <p class="text-sm mt-2">Object-oriented programming language</p>
+        </div> -->
+
+        <div
+          class="p-6 border-2 border-blue-500 rounded-lg hover:shadow-lg transition-transform transform hover:-translate-y-1"
+        >
+          <i class="fa-brands fa-java text-6xl text-blue-500 mb-4"></i>
+          <!-- <i class=""></i> -->
+          <h3 class="text-xl font-semibold">JAVA</h3>
+          <p class="text-sm mt-2">Object-oriented programming language</p>
+        </div>
+
+        <div
+          class="p-6 border-2 border-blue-500 rounded-lg flex flex-col justify-center items-center hover:shadow-lg transition-transform transform hover:-translate-y-1"
+        >
+          <img
+            class="w-20"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+          />
+          <h3 class="text-xl font-semibold">C</h3>
+          <p class="text-sm mt-2">Foundational programming language</p>
+        </div>
+
+        <div
+          class="p-6 border-2 border-blue-500 rounded-lg hover:shadow-lg transition-transform transform hover:-translate-y-1"
+        >
+          <i class="fa-brands fa-html5 text-6xl text-orange-600 mb-4"></i>
+          <h3 class="text-xl font-semibold">HTML</h3>
+          <p class="text-sm mt-2">Markup Language for web structure</p>
+        </div>
+
+        <div
+          class="p-6 border-2 border-blue-500 rounded-lg hover:shadow-lg transition-transform transform hover:-translate-y-1"
+        >
+          <i class="fa-brands fa-css3-alt text-6xl text-blue-500 mb-4"></i>
+          <h3 class="text-xl font-semibold">CSS</h3>
+          <p class="text-sm mt-2">Styling for a modern look</p>
+        </div>
+
+        <div
+          class="p-6 border-2 border-blue-500 rounded-lg hover:shadow-lg transition-transform transform hover:-translate-y-1"
+        >
+          <i class="fa-brands fa-js text-6xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold">JavaScript</h3>
+          <p class="text-sm mt-2">Dynamic scripting language</p>
+        </div>
+
+        <div
+          class="p-6 border-2 border-blue-500 rounded-lg hover:shadow-lg transition-transform transform hover:-translate-y-1"
+        >
+          <div class="flex items-center justify-center">
+            <img
+              class="h-16"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+            />
+          </div>
+
+          <h3 class="text-xl font-semibold pt-3">PYTHON</h3>
+          <p class="text-sm mt-2">High-level programming language</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-full sm:pt-20 flex flex-col justify-center relative"
+      id="Project"
+    >
+      <div class="text-center mb-10">
+        <p class="text-4xl font-medium mb-3">
+          My <span class="text-blue-500">Projects</span>
+        </p>
+        <p class="text-lg">Some of the projects I’ve worked on</p>
+      </div>
+
+      <div class="grid h-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div
+          class="border-2 h border-blue-500 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="h-64 overflow-y-scroll">
+            <img src="bank33.jpg" class="w-full object-cover" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-2xl font-semibold mb-2">Bank Management System</h3>
+            <p class="text-sm mb-4">
+              A Python system for managing accounts, transactions, and balance
+              inquiries with simple functionality for efficient banking
+              operations.
+            </p>
+            <div class="flex justify-between">
+              <a
+                href="#calculator"
+                class="hover:bg-blue-500 border-2 border-blue-500 text-white rounded-full px-3 py-1 transition-colors"
+                >View Project</a
+              >
+              <a
+                href="#"
+                class="hover:bg-blue-500 border-2 border-blue-500 text-white rounded-full px-3 py-1 transition-colors"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-2 border-blue-500 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+        >
+          <div class="h-64 overflow-y-scroll">
+            <img src="NetflixClone.jpeg" class="w-full object-cover" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-2xl font-semibold mb-2">Nitflix Clone</h3>
+            <p class="text-sm mb-4">
+              A fully responsive Netflix clone built using HTML, CSS, and
+              JavaScript to create a dynamic and modern user interface.
+            </p>
+            <div class="flex justify-between">
+              <a
+                href="#"
+                class="hover:bg-blue-500 border-2 border-blue-500 text-white rounded-full px-3 py-1 transition-colors"
+                >View Project</a
+              >
+              <a
+                href="http://127.0.0.1:5500/index.html"
+                class="hover:bg-blue-500 border-2 border-blue-500 text-white rounded-full px-3 py-1 transition-colors"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full sm:pt-20 sm:pb-14 flex items-center" id="Contact">
+      <div class="w-full max-w-2xl mx-auto space-y-4">
+        <p class="text-4xl font-medium text-center">
+          Contact <span class="text-blue-500">Me</span>
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-between mb-2 space-y-4 sm:space-y-0 sm:space-x-4"
+        >
+          <input
+            class="w-full sm:w-1/2 px-4 py-2 rounded-md bg-slate-700 name"
+            type="text"
+            placeholder="Full Name"
+          />
+          <input
+            class="w-full sm:w-1/2 px-4 py-2 rounded-md bg-slate-700 email"
+            type="email"
+            placeholder="Email Address"
+          />
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-between mb-2 space-y-4 sm:space-y-0 sm:space-x-4"
+        >
+          <input
+            class="w-full sm:w-1/2 px-4 py-2 rounded-md bg-slate-700 mobNumber"
+            type="number"
+            max="9999999999"
+            min="1000000000"
+            placeholder="Mobile Number"
+          />
+          <input
+            class="w-full sm:w-1/2 px-4 py-2 rounded-md bg-slate-700 subject"
+            type="text"
+            placeholder="Email Subject"
+          />
+        </div>
+        <textarea
+          class="w-full px-4 py-2 rounded-md bg-slate-700 min-h-40 msg"
+          placeholder="Your Message"
+        ></textarea>
+        <div class="flex justify-center items-center mt-8 btn">
+          <button
+            type="submit"
+            class="border-2 border-blue-500 text-xl bg-blue-500 text-blue-950 font-semibold rounded-full px-6 py-2"
+          >
+            Send Message
+          </button>
+        </div>
+      </div>
+    </section>
+    <p class="text-xl italic">Made By Tushar Sharma</p>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
